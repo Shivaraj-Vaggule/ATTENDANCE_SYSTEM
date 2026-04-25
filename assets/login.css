@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b') no-repeat center/cover;
+    height: 100vh;
+}
+
+/* Overlay */
+.overlay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    color: white;
+    background: rgba(49, 39, 39, 0.5);
+}
+
+.navbar h2 span {
+    color: #00f2fe;
+}
+
+.menu a {
+    color: #ddd;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.container {
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    animation: slideRight 1s ease;
+    border-right: 1px solid #ccc;
+}
+
+.left h1 {
+    font-family: 'Tangerine';
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.left h1 span {
+    font-family: 'Tangerine';
+    color: #f5a718;
+}
+
+
+/* RIGHT SIDE */
+.right {
+    width: 55%;
+    padding: 40px;
+    background: rgba(130, 130, 130, 0);
+    background: transparent;
+
+}
+
+/* ROLE BUTTONS */
+.roles {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.roles button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.roles button.active {
+    background: #00f2fe;
+    color: #000;
+    font-weight: bold;
+}
+
+/* FORM */
+.form {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.form.active {
+    display: block;
+}
+
+.form h3 {
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    color: white;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* TOGGLE */
+.toggle {
+    text-align: center;
+    margin-top: 12px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle:hover {
+    color: white;
+}
+
+/* ERROR */
+.error-msg {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
