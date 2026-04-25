@@ -57,6 +57,7 @@ ATTENDANCE_SYSTEM/
 ├── uploads/                        # Uploaded student images
 │   └── students/
 │
+├── index.php                       # redirects to main page
 ├── login.php                       # Main login page
 ├── signup.php                      # User registration page
 └── logout.php                      # Logout handler
